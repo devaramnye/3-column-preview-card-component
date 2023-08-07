@@ -110,6 +110,7 @@ p {
 .p2,
 .p3 {
     margin-top: 1.5rem;
+    line-height: 1.3rem;
 }
 
 h1 {
@@ -132,5 +133,10 @@ h1 {
     }
     .button {
         margin-top: 6rem;
+    }
+    .p1,
+    .p2,
+    .p3 {
+        width: 90%;
     }
 }
