@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --first-section: hsl(31, 77%, 52%);
+    --second-section: hsl(184, 100%, 22%);
+    --third-section: hsl(179, 100%, 13%);
+    /* background, headings & buttons */
+    --light-gray: hsl(0, 0%, 95%);
+    /* paragraphs */
+    --transparent-white: hsla(0, 0%, 100%, 0.75);
+}
+
+body {
+    background-color: var(--light-gray);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 4rem 0;
+}
+
+img {
+    margin-bottom: 1rem;
+}
+
+.section {
+    max-width: 18.75rem;
+    padding: 2rem 2rem 1rem 2rem;
+}
+
+.s1 {
+    background-color: var(--first-section);
+    border-radius: 10px 10px 0 0;
+}
+
+.s2 {
+    background-color: var(--second-section);
+}
+
+.s3 {
+    background-color: var(--third-section);
+    border-radius: 0 0 10px 10px;
+}
+
+.button {
+    background-color: var(--light-gray);
+    max-width: 8rem;
+    margin: 1rem 0;
+    text-align: center;
+    border-radius: 20px;
+    padding: 0.6rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hover1:hover {
+    border: 1px solid var(--light-gray);
+    background-color: var(--first-section);
+}
+
+.b1:hover {
+    color: var(--light-gray);
+}
+
+.hover2:hover {
+    border: 1px solid var(--light-gray);
+    background-color: var(--second-section);
+}
+
+.b2:hover {
+    color: var(--light-gray);
+}
+
+.hover3:hover {
+    border: 1px solid var(--light-gray);
+    background-color: var(--third-section);
+}
+
+.b3:hover {
+    color: var(--light-gray);
+}
+
+.b1 {
+    color: var(--first-section);
+}
+
+.b2 {
+    color: var(--second-section);
+}
+
+.b3 {
+    color: var(--third-section);
+}
+
+p {
+    color: var(--transparent-white);
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    font-size: 0.938rem;
+}
+
+.p1,
+.p2,
+.p3 {
+    margin-top: 1.5rem;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--light-gray);
+    text-transform: uppercase;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width: 900px) {
+    main {
+        flex-direction: row;
+    }
+    .s1 {
+        border-radius: 10px 0 0 10px;
+    }
+    .s3 {
+        border-radius: 0 10px 10px 0;
+    }
+    .button {
+        margin-top: 6rem;
+    }
+}
